@@ -5,14 +5,17 @@
   <groupId>my-groupId</groupId>
   <artifactId>my-artifactId</artifactId>
   <version>my-version</version>
+
   <properties>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <surefire-plugin.version>2.22.0</surefire-plugin.version>
-    <quarkus.version>0.22.0</quarkus.version>
-    <maven.compiler.source>1.8</maven.compiler.source>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.version>1.8</java.version>
+    <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
+    <guava.version>19.0</guava.version>
+    <quarkus.version>1.1.0.Final</quarkus.version>
+    <surefire-plugin.version>2.22.0</surefire-plugin.version>
   </properties>
+
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -24,6 +27,7 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+
   <dependencies>
     <dependency>
       <groupId>io.quarkus</groupId>
@@ -40,16 +44,6 @@
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-jdbc-h2</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-junit5</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>io.rest-assured</groupId>
-      <artifactId>rest-assured</artifactId>
-      <scope>test</scope>
     </dependency>
   </dependencies>
   <build>
